@@ -1,0 +1,140 @@
+@font-face {
+    font-family: blocky;
+    src: url(../fonts/blocky.ttf);
+}
+body {
+    margin: auto;
+    background-image: url("../images/cliff_background.jpg");
+    background-size: cover;
+    color: white;
+}
+
+
+/* FOR LOGIN PAGE */
+
+.login-container{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+}
+.login-jumbo{
+    transform: translateY(25%);
+}
+
+/* FOR HOME PAGE */
+
+.jumbotron{
+    background-color: #36597d;
+}
+h2, label{
+    color: black;
+}
+.table th{
+    color: cadetblue;
+}
+.table td, .table th {
+    border-top: 1px solid #000000
+}
+
+.deleteLink{
+    color:red!important;
+}
+.deleteLink:hover{
+    cursor: pointer;
+    text-decoration: underline!important;
+}
+.staticUpdateLink{
+    color:blue!important;
+}
+.staticDeleteLink{
+    color:red!important;
+}
+.noResultsHeader{
+    color: red;
+}
+.table-container{
+    margin-top: 2.5%;
+    /* max-height: 650px;
+    overflow-y: scroll; */
+}
+.inside-table-container{
+    max-height: 600px;
+    overflow-y: scroll;
+}
+/* .table-container::-webkit-scrollbar * {
+    background:transparent;
+}
+.table-container::-webkit-scrollbar-thumb {
+    background:#999 !important;
+} */
+.left-arrow:hover, .right-arrow:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+}
+.hide-arrow{
+    opacity: 0.5
+}
+.hide-arrow:hover{
+    cursor:not-allowed
+}
+.logout{
+    position: absolute;
+    top: 0;
+}
+.previousButtonMobile{
+    display: none;
+    /* border: 1px red solid; */
+}
+/* EDIT PAGE */
+/* .edit-employee-container{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, 15%);
+} */
+
+
+/* Button display at different media queries */
+/* FOR MOBILE */
+@media only screen and (max-width: 414px) {
+    *{
+        font-size: 0.90rem;
+    }
+    /* LOGIN PAGE */
+
+    .login-jumbo{
+        transform:translateY(20%);
+    }
+    .edit-page-jumbo{
+        transform:translateY(15%);
+    }
+    
+    /* HOME PAGE */
+    .logout{
+        position: absolute;
+        top: 0;
+        right: 5%;
+    }
+    .previousButtonMobile{
+        display: block;
+        visibility: visible;
+        /* border: 1px red solid; */
+    }
+    .previousButtonDesktop{
+        visibility: hidden;
+    }
+    .nextButton{
+        text-align: right!important;
+    }
+    .search-filter-div{
+        margin-bottom: 5%
+    }
+    .search-input-column{
+        padding-left: 2%;
+    }
+    /* .search-input-button{
+        padding-left: 0;
+    } */
+}
